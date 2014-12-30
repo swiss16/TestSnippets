@@ -20,9 +20,15 @@ namespace PDFTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        PdfGenerieren pdf = new PdfGenerieren();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            pdf.GenerierePDF();
         }
     }
 }
